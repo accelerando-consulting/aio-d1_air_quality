@@ -1,0 +1,347 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L D1:WeMos_mini U1
+U 1 1 5D7E18FF
+P 4600 3650
+F 0 "U1" H 4600 2807 60  0000 C CNN
+F 1 "WeMos_mini" H 4600 2913 60  0000 C CNN
+F 2 "D1:wemos-d1-mini-with-pin-header" H 5150 2950 60  0001 C CNN
+F 3 "http://www.wemos.cc/Products/d1_mini.html" H 4600 3019 60  0000 C CNN
+	1    4600 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J2
+U 1 1 5D7E538D
+P 5900 2000
+F 0 "J2" V 5962 2144 50  0000 L CNN
+F 1 "I2C1" V 6053 2144 50  0000 L CNN
+F 2 "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal" H 5900 2000 50  0001 C CNN
+F 3 "~" H 5900 2000 50  0001 C CNN
+	1    5900 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J4
+U 1 1 5D7E6F41
+P 7200 2000
+F 0 "J4" V 7262 2144 50  0000 L CNN
+F 1 "I2C2" V 7353 2144 50  0000 L CNN
+F 2 "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal" H 7200 2000 50  0001 C CNN
+F 3 "~" H 7200 2000 50  0001 C CNN
+	1    7200 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x06_Male J1
+U 1 1 5D7E7D3B
+P 2600 2000
+F 0 "J1" V 2662 2244 50  0000 L CNN
+F 1 "GP2Y10" V 2753 2244 50  0000 L CNN
+F 2 "Connector_JST:JST_ZE_BM06B-ZESS-TBT_1x06-1MP_P1.50mm_Vertical" H 2600 2000 50  0001 C CNN
+F 3 "~" H 2600 2000 50  0001 C CNN
+	1    2600 2000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3750 4000 3750 2400
+Wire Wire Line
+	7300 2400 7300 2200
+Wire Wire Line
+	3750 2400 6000 2400
+Wire Wire Line
+	6000 2200 6000 2400
+Connection ~ 6000 2400
+Wire Wire Line
+	6000 2400 7300 2400
+Wire Wire Line
+	5550 3900 5550 2550
+Wire Wire Line
+	5550 2550 5700 2550
+Wire Wire Line
+	7000 2550 7000 2200
+Wire Wire Line
+	5100 3900 5550 3900
+Wire Wire Line
+	5700 2200 5700 2550
+Connection ~ 5700 2550
+Wire Wire Line
+	5700 2550 7000 2550
+Wire Wire Line
+	5100 3500 5900 3500
+Wire Wire Line
+	5900 3500 5900 2200
+Wire Wire Line
+	5100 3600 5800 3600
+Wire Wire Line
+	5900 3500 7200 3500
+Wire Wire Line
+	7200 3500 7200 2200
+Connection ~ 5900 3500
+Wire Wire Line
+	5800 2200 5800 3600
+Wire Wire Line
+	5800 3600 7100 3600
+Wire Wire Line
+	7100 3600 7100 2200
+Connection ~ 5800 3600
+Text Label 5100 3500 0    50   ~ 0
+SCL
+Text Label 5100 3600 0    50   ~ 0
+SDA
+Text Label 3900 4000 0    50   ~ 0
+3v3
+Text Label 5100 3900 0    50   ~ 0
+GND
+Wire Wire Line
+	2300 2200 2300 4000
+Wire Wire Line
+	2300 4000 2800 4000
+Connection ~ 3750 4000
+Wire Wire Line
+	3750 4000 4100 4000
+Wire Wire Line
+	5550 3900 5550 4350
+Wire Wire Line
+	5550 4350 2500 4350
+Connection ~ 5550 3900
+$Comp
+L power:GND #PWR01
+U 1 1 5D7F159F
+P 2500 4350
+F 0 "#PWR01" H 2500 4100 50  0001 C CNN
+F 1 "GND" H 2505 4177 50  0000 C CNN
+F 2 "" H 2500 4350 50  0001 C CNN
+F 3 "" H 2500 4350 50  0001 C CNN
+	1    2500 4350
+	1    0    0    -1  
+$EndComp
+Connection ~ 2500 4350
+$Comp
+L power:+3.3V #PWR02
+U 1 1 5D7F1D89
+P 3750 2400
+F 0 "#PWR02" H 3750 2250 50  0001 C CNN
+F 1 "+3.3V" H 3765 2573 50  0000 C CNN
+F 2 "" H 3750 2400 50  0001 C CNN
+F 3 "" H 3750 2400 50  0001 C CNN
+	1    3750 2400
+	1    0    0    -1  
+$EndComp
+Connection ~ 3750 2400
+$Comp
+L Connector:Conn_01x04_Male J5
+U 1 1 5D7F242A
+P 8450 2000
+F 0 "J5" V 8512 2144 50  0000 L CNN
+F 1 "I2C3" V 8603 2144 50  0000 L CNN
+F 2 "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal" H 8450 2000 50  0001 C CNN
+F 3 "~" H 8450 2000 50  0001 C CNN
+	1    8450 2000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7000 2550 8250 2550
+Wire Wire Line
+	8250 2550 8250 2200
+Connection ~ 7000 2550
+Wire Wire Line
+	7300 2400 8550 2400
+Wire Wire Line
+	8550 2400 8550 2200
+Connection ~ 7300 2400
+Wire Wire Line
+	7100 3600 8350 3600
+Wire Wire Line
+	8350 3600 8350 2200
+Connection ~ 7100 3600
+Wire Wire Line
+	7200 3500 8450 3500
+Wire Wire Line
+	8450 3500 8450 2200
+Connection ~ 7200 3500
+Wire Wire Line
+	2700 2200 2700 2450
+$Comp
+L Device:R R1
+U 1 1 5D7F59BC
+P 2800 3500
+F 0 "R1" H 2870 3546 50  0000 L CNN
+F 1 "150R" H 2870 3455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2730 3500 50  0001 C CNN
+F 3 "~" H 2800 3500 50  0001 C CNN
+	1    2800 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 3650 2800 4000
+Connection ~ 2800 4000
+Wire Wire Line
+	2800 4000 3750 4000
+Wire Wire Line
+	2800 3350 2800 3250
+$Comp
+L Device:CP C1
+U 1 1 5D7F83D6
+P 2700 2900
+F 0 "C1" H 2582 2854 50  0000 R CNN
+F 1 "220uF" H 2582 2945 50  0000 R CNN
+F 2 "Capacitor_SMD:CP_Elec_6.3x7.7" H 2738 2750 50  0001 C CNN
+F 3 "~" H 2700 2900 50  0001 C CNN
+	1    2700 2900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2700 3050 2700 3250
+Wire Wire Line
+	2700 3250 2800 3250
+Connection ~ 2800 3250
+Wire Wire Line
+	2800 3250 2800 2200
+Wire Wire Line
+	2600 2200 2600 2350
+Wire Wire Line
+	2600 2350 3350 2350
+Wire Wire Line
+	3350 2350 3350 3500
+Wire Wire Line
+	3350 3500 4100 3500
+Wire Wire Line
+	2400 2200 2400 2550
+Wire Wire Line
+	2400 2550 3500 2550
+Wire Wire Line
+	3500 2550 3500 3400
+Wire Wire Line
+	3500 3400 4100 3400
+Wire Wire Line
+	2500 2200 2500 2450
+Wire Wire Line
+	2700 2450 2500 2450
+Connection ~ 2700 2450
+Wire Wire Line
+	2700 2450 2700 2750
+Connection ~ 2500 2450
+Wire Wire Line
+	2500 2450 2500 4350
+$Comp
+L Connector:Conn_01x07_Male J3
+U 1 1 5D802F3F
+P 6200 5550
+F 0 "J3" H 6172 5482 50  0000 R CNN
+F 1 "Conn_01x07_Male" V 6172 5573 50  0000 R CNN
+F 2 "Connector_JST:JST_XH_B7B-XH-AM_1x07_P2.50mm_Vertical" H 6200 5550 50  0001 C CNN
+F 3 "~" H 6200 5550 50  0001 C CNN
+	1    6200 5550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_3_Bridged12 JP2
+U 1 1 5D807B10
+P 6450 4650
+F 0 "JP2" H 6450 4763 50  0000 C CNN
+F 1 "RX" H 6450 4854 50  0000 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm" H 6450 4650 50  0001 C CNN
+F 3 "~" H 6450 4650 50  0001 C CNN
+	1    6450 4650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Jumper:SolderJumper_3_Bridged12 JP1
+U 1 1 5D80E350
+P 5800 4650
+F 0 "JP1" H 5800 4763 50  0000 C CNN
+F 1 "TX" H 5800 4854 50  0000 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm" H 5800 4650 50  0001 C CNN
+F 3 "~" H 5800 4650 50  0001 C CNN
+	1    5800 4650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5100 3700 6450 3700
+Wire Wire Line
+	6450 3700 6450 4500
+Wire Wire Line
+	5800 4500 5800 3800
+Wire Wire Line
+	5800 3800 5100 3800
+Text Label 5100 3700 0    50   ~ 0
+RX2_PM10
+Text Label 5100 3800 0    50   ~ 0
+TX2_2PM5
+Wire Wire Line
+	5350 4650 5350 5250
+Wire Wire Line
+	5350 5250 6000 5250
+Wire Wire Line
+	6000 5250 6000 5350
+Wire Wire Line
+	5100 4000 5250 4000
+Wire Wire Line
+	5250 4000 5250 5150
+Wire Wire Line
+	5250 5150 6100 5150
+Wire Wire Line
+	6100 5150 6100 5350
+Text Label 5100 4000 0    50   ~ 0
+5v
+Wire Wire Line
+	6250 4650 6200 4650
+Wire Wire Line
+	6200 4650 6200 5350
+Wire Wire Line
+	5350 4650 5600 4650
+Wire Wire Line
+	5550 4350 5550 5050
+Wire Wire Line
+	5550 5050 6300 5050
+Wire Wire Line
+	6300 5050 6300 5350
+Connection ~ 5550 4350
+Wire Wire Line
+	6000 4650 6100 4650
+Wire Wire Line
+	6100 4650 6100 4950
+Wire Wire Line
+	6100 4950 6400 4950
+Wire Wire Line
+	6400 4950 6400 5350
+Wire Wire Line
+	6650 4650 6800 4650
+Wire Wire Line
+	6800 4650 6800 4950
+Wire Wire Line
+	6800 4950 6500 4950
+Wire Wire Line
+	6500 4950 6500 5350
+Text Label 3900 3400 0    50   ~ 0
+Vo
+Text Label 3900 3500 0    50   ~ 0
+LED
+Text Label 2800 2750 1    50   ~ 0
+vLED
+Text Label 2700 2700 1    50   ~ 0
+LEDGND
+Text Label 5400 5250 0    50   ~ 0
+PM25_PWM
+Text Label 6200 4850 1    50   ~ 0
+PM10_PWM
+Text Label 6400 5350 1    50   ~ 0
+SENS_RX
+Text Label 6500 5350 1    50   ~ 0
+SENS_TX
+$EndSCHEMATC
