@@ -2,6 +2,8 @@
 
 This shield is designed to take one of two kinds of dust sensor
 
+![Picture of the PCB and sensors](pcb.jpeg)
+
 * **Sharp GP2Y10** inexpensive LED sensor (cheap but rather low accuracy) [datasheet](https://www.sparkfun.com/datasheets/Sensors/gp2y1010au_e.pdf)
 
 * **Nova Fitness SDS011** laser sensor [info](https://www.hackster.io/taunoerik/using-sds011-dust-sensor-01f019) [more info](https://aqicn.org/sensor/sds011/)
@@ -22,3 +24,4 @@ If you're using Arduino, just search for the names of your sensors in the librar
 
 If you want a leg up, check out our [Stacx](https://github.com/accelerando-consulting/stacx) framework which provides a ready-to-use MQTT sensor runtime for ESP8266 and ESP32 (It's Arduino-based, too).
 
+![Diagram of PCB](d1_air_quality.png)
